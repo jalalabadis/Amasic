@@ -1,0 +1,311 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,500);
+@import url(https://fonts.googleapis.com/css?family=Muli:600,900);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+
+.spinner-container {
+    padding: 3rem
+}
+
+.spinner-container.full {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: hsla(0, 0%, 100%, .6)
+}
+
+.spinner-container .spinner {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s ease-in-out infinite;
+    animation: sk-rotateplane 1.2s ease-in-out infinite
+}
+
+
+
+
+.login-providers .provider-item {
+    margin-bottom: .5rem
+}
+
+.login-providers .provider-btn {
+    font-size: .9rem;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0
+}
+
+.login-providers .provider-apple,
+.login-providers .provider-facebook {
+    display: flex;
+    background: var(--facebook-blue);
+    color: #fff;
+    padding: .5rem;
+    justify-content: center;
+    align-items: center
+}
+
+.login-providers .provider-apple svg.icon,
+.login-providers .provider-facebook svg.icon {
+    margin-right: .5rem;
+    width: 22px;
+    height: 22px;
+    fill: #fff
+}
+
+.login-providers .provider-apple {
+    background: #000;
+    color: #fff
+}
+
+.login-providers .disabled {
+    opacity: .7
+}
+
+.login-providers .terms {
+    margin-bottom: .5rem
+}
+
+.login-providers .terms input {
+    margin-right: .5rem
+}
+
+.login-providers .tems-button {
+    padding: 0;
+    height: auto;
+    line-height: 1;
+    text-decoration: underline
+}
+
+.separator {
+    border-top: 1px solid #ddd;
+    margin-top: var(--baseline);
+    text-align: center
+}
+
+.separator span {
+    display: inline-block;
+    position: relative;
+    top: calc(-0.5*var(--baseline));
+    background: #E7EAFF;
+    padding: 0 1rem
+}
+
+.login-form .login {
+    min-height: 100vh;
+    background: #fff
+}
+
+.login-form .login .title {
+    margin-bottom: 2rem !important
+}
+
+.login-form .show-password {
+    float: right
+}
+
+.login-form .login-providers-container {
+    margin-bottom: 2rem
+}
+
+.login-form .form-fieldset {
+    margin-top: 1rem
+}
+
+
+.change-action {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem
+}
+
+.overlay .change-action button {
+    margin-left: 1rem
+}
+
+
+:root {
+    --baseline: 24px;
+    --bg: #f2f1ef;
+    --color-action: #95a9aa;
+    --color-action-rgb: 149, 169, 170;
+    --color-action-bg-light: #232f3e;
+    --color-action-active: hsla(0, 0%, 58.8%, 0.54);
+    --color-divider: #eee;
+    --color-divider-light: #f8f8f8;
+    --color-icon: #ddd;
+    --color-primary: #ff9800;
+    --color-primary-rgb: 255, 152, 0;
+    --color-bg-primary-2: #fff8e1;
+    --color-bg-primary: #ffecb3;
+    --color-accent: #ff6f00;
+    --color-accent-light: rgba(255, 111, 0, 0.8);
+    --color-success: 39, 174, 96;
+    --color-text-primary: rgba(0, 0, 0, 0.8);
+    --color-text-secondary: rgba(0, 0, 0, 0.54);
+    --color-text-placeholder: rgba(0, 0, 0, 0.34);
+    --color-text-bg-dark: #fff;
+    --color-text-rgb: 255, 255, 255;
+    --opacity-text-bg-dark: 0.8;
+    --color-amazon-blue: #232f3e;
+    --color-error: 211, 47, 47;
+    --radius: 5px;
+    --menu-height: 3rem;
+    --facebook-blue: #3b5998
+}
+
+
+
+fieldset {
+    border-width: 0;
+    padding: 0
+}
+
+fieldset>ul>li {
+    margin-bottom: 24px;
+    margin-bottom: var(--baseline);
+    list-style: none
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.scene{
+    background: transparent; box-shadow: none; margin-left: 18%;   
+}
+
+
+:root .checkbox,
+:root .radio {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1.5rem
+}
+
+:root .checkbox span,
+:root .radio span {
+    display: inline-block
+}
+
+:root .radio {
+    margin-bottom: vr(.5)
+}
+
+:root .checkbox>input[type=checkbox],
+:root .radio>input[type=radio] {
+    opacity: 0;
+    position: absolute
+}
+
+:root .checkbox:hover>span:before,
+:root .radio:hover>span:before {
+    box-shadow: 0 0 2px #ccc
+}
+
+:root .checkbox>span:before,
+:root .radio>span:before {
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 .5rem 0 0;
+    border-radius: 100%;
+    vertical-align: bottom;
+    background: #fff;
+    border: 1px solid #95a9aa;
+    border: 1px solid var(--color-action);
+    transition: all .2s ease-out
+}
+
+:root .checkbox input[type=checkbox]:checked+span:before {
+    background: #ff9800;
+    background: var(--color-primary);
+    border: 1px solid hsla(0, 0%, 100%, .8)
+}
+
+:root .checkbox input[type=checkbox]:disabled+span,
+:root .radio input[type=radio]:disabled+span {
+    cursor: default;
+    opacity: .4
+}
+
+:root .checkbox input[type=checkbox]+span:before {
+    border-radius: 5px;
+    border-radius: var(--radius);
+    overflow: hidden
+}
+
+:root .radio input[type=radio]:checked+span:after {
+    content: "";
+    font-size: 2rem;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(1.5rem - 8px);
+    height: calc(1.5rem - 8px);
+    background: #ff9800;
+    background: var(--color-primary);
+    border-radius: 100%
+}
+
+:root .checkbox input[type=checkbox]+span:after {
+    content: "";
+    position: absolute;
+    top: calc((1rem - 4px)/2);
+    left: .25rem;
+    width: 0;
+    height: .5rem;
+    border: 2px solid #fff;
+    border-width: 0 0 2px 2px;
+    transform: rotate(-45deg);
+    transition: width .2s ease-in
+}
+
+:root .checkbox input[type=checkbox]:checked+span:after {
+    width: 1rem
+}
+
+button:hover {
+    color: var(--color-text);
+    border-color: hsla(0, 0%, 58.8%, .54);
+    border-color: var(--color-action-active)
+}
+
+.button.is-primary {
+    background-color: #0045FF;
+}
+
+.button.is-primary:hover {
+    background-color: #232f3e;
+    background-color: var(--color-amazon-blue)
+}
+
+button {
+    background: #232f3e;
+    background: var(--color-amazon-blue);
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    border-radius: var(--radius);
+    padding: .25rem;
+    cursor: pointer;
+    outline: 0
+}
+
+.lastbtnforLogin{
+    margin-left: 5px; background: transparent; border: 1px solid #e4d4d4;
+}
